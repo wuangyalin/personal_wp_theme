@@ -1,0 +1,125 @@
+/**
+* HOME SECTION  STYLES
+**/
+
+section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+section h2.title {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 10px 0;
+    margin-bottom: 44px;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.resume a:hover {
+    color: #4285f4;
+}
+
+.github a:hover {
+    color: #6e5494;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.services .icon {
+    color: #aaa;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 0 #333;
+}
+
+.text-gradient {
+    background: #222222;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #555555 0%, #333333 100%);
+    background-image: linear-gradient(to bottom, #555555 0%, #333333 100%);
+    background-repeat: repeat-x;
+}
+
+.services p {
+    font-size: 15px;
+    text-align: left;
+}
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.33;
+    border-radius: 0;
+}
+
+.btn {
+    font-weight: normal;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 0;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+label.h4 {
+    font-size: 16px;
+}
+
+.wpcf7-textarea {
+    height: 120px;
+    width: 100%;
+}
+
+.profile {
+    padding-top: 10px;
+}
+
+
+/**
+* HOME SECTIONS STYLES END
+**/
