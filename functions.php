@@ -155,34 +155,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-
-//Luke GOng added
-
-function dd($val = 'dump', $exit = true) {
-	echo '<pre>';
-	var_dump($val);
-	echo '</pre>';
-
-	if ($exit) {
-			exit;
-	}
-}
-function getProjects($num = 30){
-$ret = array();
-$args = array(
-	'post_type' => 'my_project',
-	'posts_per_page' => "$num"
-);
-$posts = get_posts($args);
-
-return $posts;
-}
-
-// added menu
-function atlas_register_my_menu() {
-	register_nav_menu('main_menu',__( 'Main Menu' ));
-  }
-add_action( 'init', 'atlas_register_my_menu' );
-
-add_image_size( 'luke-thumb', 400, 400 );

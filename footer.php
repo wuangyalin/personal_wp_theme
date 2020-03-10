@@ -39,12 +39,10 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideNav.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/isotope.pkgd.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/masonry-horizontal.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/fit-columns.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/dist/bundle.js"></script>
+
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideNav.min.js"></script> -->
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/customizer.js"></script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/three.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/tween.min.js"></script>

@@ -5,6 +5,42 @@
  * @package LukeGong
  */
 
+//Luke GOng added
+
+function dd($val = 'dump', $exit = true) {
+	echo '<pre>';
+	var_dump($val);
+	echo '</pre>';
+
+	if ($exit) {
+			exit;
+	}
+}
+function getProjects($num = 30){
+$ret = array();
+$args = array(
+	'post_type' => 'my_project',
+	'posts_per_page' => "$num"
+);
+$posts = get_posts($args);
+
+return $posts;
+}
+
+// added menu
+function atlas_register_my_menu() {
+	register_nav_menu('main_menu',__( 'Main Menu' ));
+  }
+add_action( 'init', 'atlas_register_my_menu' );
+
+add_image_size( 'luke-thumb', 400, 400 );
+
+add_filter( 'nav_menu_link_attributes', function($atts) {
+	$atts['class'] = "nav-link";
+	return $atts;
+}, 100, 1 );
+
+
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
