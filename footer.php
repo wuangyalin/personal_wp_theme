@@ -39,19 +39,11 @@
 
 
 
-<script src="<?php echo get_template_directory_uri(); ?>/dist/bundle.js"></script>
-
-<!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slideNav.min.js"></script> -->
+<script src="<?php echo get_template_directory_uri(); ?>/dist/app.bundle.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/dist/three.bundle.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/banner_new.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/customizer.js"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/three.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/tween.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/controls/OrbitControls.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/Detector.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/controls/TrackballControls.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/renderers/Projector.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/lib/three/loaders/BinaryLoader.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/banner_new.js"></script>
 
 </body>
 </html>

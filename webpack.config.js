@@ -1,11 +1,12 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: [
-        "./assets/js/app.js",
-    ],
+    entry: {
+        app: './assets/js/app.js',
+        three: './assets/js/threebundle.js',
+    },
     output: {
-      filename: "./bundle.js"
+      filename: '[name].bundle.js'
     },
     mode: 'production',
     plugins:[
@@ -14,5 +15,20 @@ module.exports = {
             $: 'jquery',
             jquery: 'jquery',
         })        
-    ]
+    ],
+    // module: {
+    //     rules: [
+    //       {
+    //         test: /\.s[ac]ss$/i,
+    //         use: [
+    //           // Creates `style` nodes from JS strings
+    //           'style-loader',
+    //           // Translates CSS into CommonJS
+    //           'css-loader',
+    //           // Compiles Sass to CSS
+    //           'sass-loader',
+    //         ],
+    //       },
+    //     ],
+    //   },
 }

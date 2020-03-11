@@ -13,5 +13,6 @@ jQueryBridget( 'isotope', Isotope, $ );
 const SmoothScroll = require('smooth-scroll');
 window.SmoothScroll = SmoothScroll;
 
+// import '../sass/theme.scss';
 
 

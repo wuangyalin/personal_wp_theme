@@ -1,5 +1,3 @@
-if (!Detector.webgl) Detector.addGetWebGLMessage();
-
 var SHADOW_MAP_WIDTH = 2048,
     SHADOW_MAP_HEIGHT = 1024;
 
@@ -82,7 +80,7 @@ function init() {
 
 
     //
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls = new OrbitControls(camera, renderer.domElement);
     controls.enableZoom = false;
     controls.minPolarAngle = 0; // radians
     controls.maxPolarAngle = Math.PI / 2; // radians
@@ -179,12 +177,12 @@ function createScene() {
 
     //objects
 
-    loadFurniture("screen_left");
-    loadFurniture("desk");
-    loadFurniture("screen_main");
-    loadFurniture("desk_leg");
-    loadFurniture("screen_right");
-    loadFurniture("computer_frame");
+    // loadFurniture("screen_left");
+    // loadFurniture("desk");
+    // loadFurniture("screen_main");
+    // loadFurniture("desk_leg");
+    // loadFurniture("screen_right");
+    // loadFurniture("computer_frame");
 
 
 }
