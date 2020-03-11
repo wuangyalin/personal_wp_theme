@@ -144,7 +144,7 @@ function createScene() {
     // TEXT
 
     var loader = new THREE.FontLoader();
-    loader.load('wp-content/themes/lukegong/assets/fonts/optimer_regular.typeface.json', function(font) {
+    loader.load('wp-content/themes/lukegong/assets/lib/fonts/optimer_regular.typeface.json', function(font) {
 
         var textGeo = new THREE.TextGeometry("Luke Gong", {
 
