@@ -5,7 +5,7 @@ var HUD_MARGIN = 0.05;
 
 var SCREEN_WIDTH = window.innerWidth;
 var SCREEN_HEIGHT = window.innerHeight;
-var FLOOR = -250;
+var FLOOR = -300;
 
 var camera, controls, scene, renderer;
 var container, stats;
@@ -176,14 +176,13 @@ function createScene() {
 
 
     //objects
-
     // loadFurniture("screen_left");
     // loadFurniture("desk");
     // loadFurniture("screen_main");
     // loadFurniture("desk_leg");
     // loadFurniture("screen_right");
     // loadFurniture("computer_frame");
-
+    loadFurniture("all");
 
 }
 
@@ -221,25 +220,24 @@ function loadText(material, path, name, repeatx, repeaty) {
 }
 
 function loadFurniture(name, m1, m2, m3, m4, m5, m6, m7) {
-    var loader = new THREE.BinaryLoader();
-    loader.load("wp-content/themes/lukegong/assets/models/banner_parts/" + name + ".js", function(geometry, materials) {
-        if (m1) materials[0] = m1;
-        if (m2) {
-            materials[1] = m2;
-        }
-        if (m3) materials[2] = m3;
-        if (m4) materials[3] = m4;
-        if (m5) materials[4] = m5;
-        if (m6) materials[5] = m6;
-        if (m7) materials[6] = m7;
-        var faceMaterial = new THREE.MultiMaterial(materials);
-        var object = new THREE.Mesh(geometry, faceMaterial);
+    var loader = new THREE.ObjectLoader();
+    loader.load("wp-content/themes/lukegong/assets/models/banner_parts/" + name + ".json", function(object) {
         object.scale.set(50, 50, 50);
         object.position.set(0, FLOOR, 0);
         object.rotation.y = -Math.PI / 2;
-        object.castShadow = true;
-        object.receiveShadow = true;
+        object.traverse( function ( child ) {
+
+        if ( child instanceof THREE.Mesh ) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+        }
+    
+        } );
+        // object.castShadow = false;
+        // object.receiveShadow = true;
         scene.add(object);
+        console.log(object);
+
     });
 }
 

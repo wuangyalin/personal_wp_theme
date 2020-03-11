@@ -1,0 +1,15 @@
+{
+  "name": "converters",
+  "version": "1.0.0",
+  "description": "Utilities for converting model files to the Three.js JSON format.\r It's necessary to install the [esm](https://www.npmjs.com/package/esm) npm package before you can use the converters.",
+  "main": "fbx2three.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
