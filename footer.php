@@ -12,9 +12,7 @@
 ?>
 <div class="wrapper" id="wrapper-footer">
 		<section id="footer" class="footer">
-			<div class="container">
-
-
+			<div class="container luke">
 					<div class="row">
 
 						<div class="col-md-6">
