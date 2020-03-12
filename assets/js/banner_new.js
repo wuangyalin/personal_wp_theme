@@ -39,12 +39,12 @@ function init() {
     // SCENE
 
     scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0xffffff, 1000, FAR);
+    scene.fog = new THREE.Fog(0x3d3d3d, 1000, FAR);
 
     // LIGHTS
 
-    var ambient = new THREE.AmbientLight(0x444444);
-    scene.add(ambient);
+    // var ambient = new THREE.AmbientLight(0x444444);
+    // scene.add(ambient);
 
     light = new THREE.SpotLight(0xffffff);
     light.position.set(0, 1500, 1000);
@@ -85,8 +85,8 @@ function init() {
     controls.minPolarAngle = 0; // radians
     controls.maxPolarAngle = Math.PI / 2; // radians
 
-    controls.minAzimuthAngle = -Math.PI / 2;
-    controls.maxAzimuthAngle = Math.PI / 2;
+    // controls.minAzimuthAngle = -Math.PI / 2;
+    // controls.maxAzimuthAngle = Math.PI / 2;
 
     window.addEventListener('resize', onWindowResize, false);
     window.addEventListener('keydown', onKeyDown, false);
@@ -233,11 +233,7 @@ function loadFurniture(name, m1, m2, m3, m4, m5, m6, m7) {
         }
     
         } );
-        // object.castShadow = false;
-        // object.receiveShadow = true;
         scene.add(object);
-        console.log(object);
-
     });
 }
 
